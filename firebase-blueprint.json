@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Wish": {
+      "title": "Lời chúc",
+      "description": "Lời nhắn của cựu học sinh và giáo viên",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Tên người gửi" },
+        "message": { "type": "string", "description": "Nội dung lời nhắn" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Thời gian tạo" }
+      },
+      "required": ["name", "message", "createdAt"]
+    },
+    "Admin": {
+      "title": "Quản trị viên",
+      "description": "Danh sách người dùng có quyền quản trị",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "description": "Email của quản trị viên" }
+      },
+      "required": ["email"]
+    }
+  },
+  "firestore": {
+    "/wishes/{wishId}": {
+      "schema": "Wish",
+      "description": "Bộ sưu tập các lời chúc"
+    },
+    "/admins/{adminId}": {
+      "schema": "Admin",
+      "description": "Danh sách quản trị viên để phân quyền"
+    }
+  }
+}
