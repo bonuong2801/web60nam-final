@@ -102,7 +102,7 @@ export const Alumni = () => {
           <span className="caps-label mb-4">Tự hào</span>
           <h2 className="font-script text-5xl md:text-7xl mb-8 text-slate-900 dark:text-slate-50">Mạng Lưới <span className="italic text-amber-600">Cựu Học Sinh</span></h2>
           <div className="w-24 h-px bg-amber-500 mx-auto mb-10" />
-          <p className="text-slate-500 font-light text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto italic font-serif">
+          <p className="text-slate-500 font-light text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto italic font-serif whitespace-nowrap">
             Từ mái trường Cẩm Giàng, các thế hệ học sinh đã vươn xa và tỏa sáng trên khắp năm châu.
           </p>
         </motion.div>
