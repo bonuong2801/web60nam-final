@@ -81,7 +81,7 @@ export function Navbar() {
               className="flex items-center gap-2 cursor-pointer" 
               onClick={() => scrollToSection("hero")}
             >
-              <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-sm">
+              <div className="w-8 h-8 flex items-center justify-center overflow-hidden">
                 <img src="/images/logon.png?v=20260802" alt="Logo" className="w-full h-full object-cover p-1" />
               </div>
               <span className={`font-serif font-semibold text-lg tracking-wide transition-colors ${

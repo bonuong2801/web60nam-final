@@ -12,7 +12,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
           <div className="md:col-span-5 space-y-8">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 bg-white dark:bg-slate-900 rounded-full flex items-center justify-center p-2 shadow-2xl dark:shadow-black/50">
+              <div className="w-16 h-16 flex items-center justify-center overflow-hidden">
                  <SafeImage loading="lazy" src="/images/logon.png?v=20260802" alt="Logo" className="w-full h-full object-contain" />
               </div>
               <div>

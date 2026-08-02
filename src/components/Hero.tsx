@@ -36,7 +36,7 @@ export function Hero() {
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-3 lg:gap-4"
         >
-          <div className="w-10 h-10 md:w-14 md:h-14 bg-white dark:bg-slate-900 rounded-full flex items-center justify-center overflow-hidden shadow-2xl dark:shadow-black/50 ring-4 ring-white/10 shrink-0">
+          <div className="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center overflow-hidden shrink-0">
             <SafeImage src="/images/logon.png?v=20260802" alt="Logo THPT Cẩm Giàng" className="w-full h-full object-cover p-1" decoding="async" />
           </div>
           <div className="flex flex-col">
