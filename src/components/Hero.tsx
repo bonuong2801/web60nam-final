@@ -37,7 +37,7 @@ export function Hero() {
           className="flex items-center gap-3 lg:gap-4"
         >
           <div className="w-10 h-10 md:w-14 md:h-14 bg-white dark:bg-slate-900 rounded-full flex items-center justify-center overflow-hidden shadow-2xl dark:shadow-black/50 ring-4 ring-white/10 shrink-0">
-            <SafeImage src="/images/logo.png" alt="Logo THPT Cẩm Giàng" className="w-full h-full object-cover p-1" decoding="async" />
+            <SafeImage src="/images/logo1.png" alt="Logo THPT Cẩm Giàng" className="w-full h-full object-cover p-1" decoding="async" />
           </div>
           <div className="flex flex-col">
             <span className="text-white font-serif text-lg md:text-xl font-medium tracking-wide drop-shadow-lg">THPT Cẩm Giàng</span>

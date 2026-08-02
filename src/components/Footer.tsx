@@ -13,7 +13,7 @@ export function Footer() {
           <div className="md:col-span-5 space-y-8">
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 bg-white dark:bg-slate-900 rounded-full flex items-center justify-center p-2 shadow-2xl dark:shadow-black/50">
-                 <SafeImage loading="lazy" src="/images/logo.png" alt="Logo" className="w-full h-full object-contain" />
+                 <SafeImage loading="lazy" src="/images/logo1.png" alt="Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="font-serif text-2xl text-white leading-tight">Trường THPT <br/>Cẩm Giàng</h3>
