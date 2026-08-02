@@ -82,7 +82,7 @@ export function Navbar() {
               onClick={() => scrollToSection("hero")}
             >
               <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-sm">
-                <img src="/images/logo1.png" alt="Logo" className="w-full h-full object-cover p-1" />
+                <img src="/images/logon.png?v=20260802" alt="Logo" className="w-full h-full object-cover p-1" />
               </div>
               <span className={`font-serif font-semibold text-lg tracking-wide transition-colors ${
                 isScrolled || isMobileMenuOpen ? "text-slate-900 dark:text-white" : "text-white"

@@ -13,7 +13,7 @@ export function Footer() {
           <div className="md:col-span-5 space-y-8">
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 bg-white dark:bg-slate-900 rounded-full flex items-center justify-center p-2 shadow-2xl dark:shadow-black/50">
-                 <SafeImage loading="lazy" src="/images/logo1.png" alt="Logo" className="w-full h-full object-contain" />
+                 <SafeImage loading="lazy" src="/images/logon.png?v=20260802" alt="Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="font-serif text-2xl text-white leading-tight">Trường THPT <br/>Cẩm Giàng</h3>
@@ -33,19 +33,19 @@ export function Footer() {
                    <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-slate-900 dark:text-slate-50 transition-colors">
                      <MapPin size={16} />
                    </div>
-                   <span className="leading-relaxed">Thị trấn Lai Cách, Huyện Cẩm Giàng, Tỉnh Hải Dương</span>
+                   <span className="leading-relaxed">Xã Mao Điền, TP.Hải Phòng</span>
                  </li>
                  <li className="flex items-center gap-4 group">
                     <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-slate-900 dark:text-slate-50 transition-colors">
                       <Phone size={16} />
                     </div>
-                   <span>(0220) 3xxx xxx</span>
+                   <span>0865860336</span>
                  </li>
                  <li className="flex items-center gap-4 group">
                     <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-slate-900 dark:text-slate-50 transition-colors">
                       <Mail size={16} />
                     </div>
-                   <span>alumni@camgiang.edu.vn</span>
+                   <span>thpt-camgiang@haiphong.edu.vn</span>
                  </li>
                </ul>
              </div>
@@ -72,7 +72,7 @@ export function Footer() {
         <div className="mt-24 pt-10 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] uppercase tracking-widest text-slate-500 font-bold">
           <p>&copy; {new Date().getFullYear()} THPT Cẩm Giàng. All Rights Reserved.</p>
           <p className="flex items-center gap-2">
-            Design with <span className="text-red-500">❤️</span> by Anniversary Media Team
+            Design by <span className="text-red-500">tunggduongg</span>
           </p>
         </div>
       </div>
