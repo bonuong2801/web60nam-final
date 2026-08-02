@@ -169,14 +169,12 @@ export function Hero() {
               exit={{ scale: 0.9, opacity: 0 }}
               className="w-full max-w-6xl aspect-video bg-black rounded-[2rem] overflow-hidden shadow-[0_0_100px_rgba(245,158,11,0.2)] border border-white/10"
             >
-              <video 
-                controls 
-                autoPlay
-                className="w-full h-full object-cover"
-              >
-                <source src="/videos/video-1.mp4" type="video/mp4" />
-                Trình duyệt của bạn không hỗ trợ thẻ video.
-              </video>
+              <iframe
+                src="https://drive.google.com/file/d/1KbQ9R1K1L5OApv48-oYRx6Xwv2SFbCxy/preview"
+                className="w-full h-full"
+                allow="autoplay"
+                allowFullScreen
+              ></iframe>
             </motion.div>
           </motion.div>
         )}
