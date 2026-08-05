@@ -104,7 +104,7 @@ export function HallOfFame() {
                
                <div className="relative bg-slate-800/40 border border-white/5 backdrop-blur-md p-8 rounded-3xl transition-all group-hover:border-amber-500/50 h-full flex flex-col items-center text-center">
                   <div className="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden mb-6 ring-4 ring-slate-700/50 group-hover:ring-amber-500/30 transition-all shadow-2xl dark:shadow-black/50">
-                    <SafeImage loading="lazy" src={item.img} alt={item.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                    <SafeImage loading="lazy" src={item.img} alt={item.name} className="w-full h-full object-cover transition-all duration-700" />
                   </div>
                   
                   <div className="space-y-4 flex-1">

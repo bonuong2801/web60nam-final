@@ -76,7 +76,7 @@ export function VideoSection() {
                     <SafeImage 
                       src={podcast.poster} 
                       alt={podcast.title} 
-                      className="w-full h-full object-cover relative z-10 opacity-60 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500"
+                      className="w-full h-full object-cover relative z-10 transition-all duration-500 group-hover:opacity-100"
                     />
                     <div className="absolute inset-0 bg-slate-900/60 flex items-center justify-center z-20 transition-all duration-500 group-hover:bg-slate-900/40">
                        <div className="flex flex-col items-center justify-center bg-slate-900/80 backdrop-blur-sm px-6 py-4 rounded-2xl border border-slate-700/50 transform group-hover:scale-105 transition-transform duration-500">

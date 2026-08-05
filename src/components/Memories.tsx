@@ -119,7 +119,7 @@ export function Memories() {
                   <div className="w-full aspect-[4/3] overflow-hidden mb-6 rounded-sm relative">
                     <SafeImage loading="lazy" src={story.img} 
                       alt={story.title} 
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110" 
+                      className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110" 
                     />
                     <div className="absolute top-4 right-4 bg-white dark:bg-slate-900/90 backdrop-blur px-3 py-1 rounded-sm text-[10px] font-bold uppercase tracking-widest text-red-900 shadow-sm">
                       {story.year}

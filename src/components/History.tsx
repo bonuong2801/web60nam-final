@@ -40,7 +40,7 @@ const MILESTONES: Milestone[] = [
     period: "1996 - 2006",
     title: "Chuyển Mình & Trưởng Thành",
     desc: "Thời kỳ đổi mới mạnh mẽ, đánh dấu sự vươn lên về cơ sở vật chất và chất lượng giáo dục.",
-    img: "/images/history-4.jpg",
+    img: "/images/history-4.png",
     overview: "Giai đoạn bản lề khi trường không ngừng mở rộng khuôn viên và nâng cấp hệ thống giảng dạy, đánh dấu kỷ nguyên mới của sự nghiệp giáo dục toàn diện.",
     cohorts: "Khóa 31 đến Khóa 40",
     individualAchievements: [
@@ -52,8 +52,8 @@ const MILESTONES: Milestone[] = [
       "Liên tục đạt danh hiệu Tập thể lao động xuất sắc cấp Tỉnh."
     ],
     gallery: [
-      "/images/history-5.jpg",
-      "/images/history-6.jpg"
+      "/images/history-5.png",
+      "/images/history-6.png"
     ]
   },
   {
@@ -109,7 +109,7 @@ export function History() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
-        <div className="text-center mb-32">
+        <div className="text-center mb-20">
           <motion.span 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -144,7 +144,7 @@ export function History() {
           {MILESTONES.map((milestone, i) => (
             <motion.div
               key={i}
-              className={`relative flex flex-col md:flex-row items-center gap-12 md:gap-0 mb-32 last:mb-0 ${
+              className={`relative flex flex-col md:flex-row items-center gap-8 md:gap-0 mb-20 last:mb-0 ${
                 i % 2 !== 0 ? "md:flex-row-reverse" : ""
               }`}
               initial={{ opacity: 0, y: 50 }}
@@ -161,12 +161,12 @@ export function History() {
               >
                 <motion.div 
                   whileHover={{ scale: 1.02 }}
-                  className="w-full max-w-[520px] aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl dark:shadow-black/50 border border-white dark:border-slate-800 relative group cursor-pointer" 
+                  className="w-full max-w-[560px] aspect-video rounded-[2rem] overflow-hidden shadow-2xl dark:shadow-black/50 border border-white dark:border-slate-800 relative group cursor-pointer" 
                   onClick={() => setSelectedMilestone(milestone)}
                 >
                   <SafeImage loading="lazy" src={milestone.img}
                      alt={milestone.title}
-                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110"
+                     className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110"
                    />
                   <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity" />
                   <div className="absolute bottom-8 left-8 right-8 text-white">

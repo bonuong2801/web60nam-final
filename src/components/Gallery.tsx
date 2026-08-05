@@ -91,7 +91,7 @@ export function Gallery() {
               >
                 <div className="aspect-square overflow-hidden mb-4 relative">
                   <SafeImage loading="lazy" src={photo.url} 
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" 
+                    className="w-full h-full object-cover transition-all duration-700" 
                     alt={photo.description} 
                   />
                   <div className="absolute inset-0 shadow-inner pointer-events-none" />

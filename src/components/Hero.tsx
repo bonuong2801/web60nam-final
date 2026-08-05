@@ -129,7 +129,7 @@ export function Hero() {
                 key={index} 
                 className="w-24 h-16 md:w-32 md:h-20 rounded-xl overflow-hidden shrink-0 border border-white/5 shadow-2xl dark:shadow-black/50 relative mx-2 group cursor-pointer"
               >
-                <SafeImage src={img} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" alt="Kỷ niệm" loading="lazy" decoding="async" />
+                <SafeImage src={img} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" alt="Kỷ niệm" loading="lazy" decoding="async" />
               </div>
             ))}
          </div>
@@ -139,7 +139,7 @@ export function Hero() {
                 key={index} 
                 className="w-24 h-16 md:w-32 md:h-20 rounded-xl overflow-hidden shrink-0 border border-white/5 shadow-2xl dark:shadow-black/50 relative mx-2 group cursor-pointer"
               >
-                <SafeImage src={img} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" alt="Kỷ niệm" loading="lazy" decoding="async" />
+                <SafeImage src={img} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" alt="Kỷ niệm" loading="lazy" decoding="async" />
               </div>
             ))}
          </div>
