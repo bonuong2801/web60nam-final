@@ -84,7 +84,7 @@ const MILESTONES: Milestone[] = [
   },
   {
     period: "2016 - 2026",
-    title: "Hội Nhập, Đạt Chuẩn & Vươn Tầm (Sứ mệnh & Tầm nhìn)",
+    title: "Sứ mệnh & Tầm nhìn",
     desc: "Kỷ nguyên đạt chuẩn quốc gia, đẩy mạnh ứng dụng công nghệ thông tin, đổi mới căn bản toàn diện và thắp sáng ngọn lửa truyền thống.",
     img: "/images/history-10.jpg",
     overview: "Định hướng phát triển trường học nề nếp, kỷ cương, tích hợp các phương pháp giáo dục hiện đại nhằm phát triển năng lực toàn diện của người học, nâng tầm cơ sở vật chất hướng đến chuẩn hóa và hiện đại hóa.",
