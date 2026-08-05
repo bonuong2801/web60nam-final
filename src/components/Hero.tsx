@@ -86,7 +86,7 @@ export function Hero() {
              </h2>
           </div>
           <p className="font-great-vibes text-amber-500/90 tracking-wide text-2xl md:text-3xl lg:text-4xl max-w-4xl mx-auto">
-            Hành trình kiến tạo tương lai • 1966 — 2026
+            Dấu ấn 60 năm chặng đường 1966 – 2026
           </p>
         </motion.div>
 
