@@ -26,7 +26,7 @@ export function Hero() {
     <section 
       id="hero"
       ref={containerRef}
-      className="relative min-h-[100vh] flex flex-col justify-center overflow-hidden bg-slate-900 pt-20 pb-40 lg:pb-48 bg-cover bg-center"
+      className="relative min-h-[100vh] flex flex-col justify-center overflow-hidden pt-20 pb-40 lg:pb-48 bg-cover bg-center"
       style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
     >
       {/* Header */}
@@ -58,7 +58,7 @@ export function Hero() {
 
       {/* Floating Elements with Parallax-ish feel */}
       <motion.div className="absolute inset-0 pointer-events-none" style={{ y: y1 }}>
-        <div className="absolute inset-0 bg-slate-900/60 transition-opacity" /> 
+        <div className="absolute inset-0 bg-slate-900/60 transition-opacity" />
         <div className="blob-container">
           <div className="blob blob-1" />
           <div className="blob blob-2" />
@@ -129,7 +129,6 @@ export function Hero() {
                 key={index} 
                 className="w-24 h-16 md:w-32 md:h-20 rounded-xl overflow-hidden shrink-0 border border-white/5 shadow-2xl dark:shadow-black/50 relative mx-2 group cursor-pointer"
               >
-                <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors z-10" />
                 <SafeImage src={img} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" alt="Kỷ niệm" loading="lazy" decoding="async" />
               </div>
             ))}
@@ -140,7 +139,6 @@ export function Hero() {
                 key={index} 
                 className="w-24 h-16 md:w-32 md:h-20 rounded-xl overflow-hidden shrink-0 border border-white/5 shadow-2xl dark:shadow-black/50 relative mx-2 group cursor-pointer"
               >
-                <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors z-10" />
                 <SafeImage src={img} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" alt="Kỷ niệm" loading="lazy" decoding="async" />
               </div>
             ))}
