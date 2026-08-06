@@ -10,6 +10,8 @@ interface Honor {
   award: string;
   type: "teacher" | "student";
   img: string;
+  subject?: string;
+  class?: string;
 }
 const HONORS: Honor[] = [
 { id: 1, name: "Cô Trần Thị Lam", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Một giải Nhất, hai giải Nhì, một giải Ba, hai giải Khuyến khích", type: "teacher", subject: "Ngữ Văn", img: "/images/halloffame-1.jpg" },

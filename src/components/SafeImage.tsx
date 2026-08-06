@@ -1,8 +1,17 @@
-import { useState } from "react";
+import { useState, type SyntheticEvent, type CSSProperties } from "react";
 
-interface SafeImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  /** Nhãn hiển thị trong placeholder khi ảnh chưa có (mặc định dùng alt) */
+interface SafeImageProps {
+  src?: string;
+  alt?: string;
+  className?: string;
+  style?: CSSProperties;
+  loading?: "lazy" | "eager";
+  decoding?: "async" | "auto" | "sync";
   placeholderLabel?: string;
+  onError?: (e: SyntheticEvent<HTMLImageElement>) => void;
+  onClick?: () => void;
+  role?: string;
+  "aria-label"?: string;
 }
 
 /**
@@ -14,13 +23,16 @@ export function SafeImage({
   alt,
   className,
   style,
+  loading,
+  decoding,
   placeholderLabel,
   onError: externalOnError,
-  ...props
+  onClick,
+  ...rest
 }: SafeImageProps) {
   const [hasError, setHasError] = useState(false);
 
-  const handleError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+  const handleError = (e: SyntheticEvent<HTMLImageElement>) => {
     setHasError(true);
     externalOnError?.(e);
   };
@@ -41,6 +53,7 @@ export function SafeImage({
         }}
         aria-label={alt}
         role="img"
+        onClick={onClick}
       >
         {/* Subtle amber glow */}
         <div
@@ -105,8 +118,11 @@ export function SafeImage({
       alt={alt}
       className={className}
       style={style}
+      loading={loading}
+      decoding={decoding}
       onError={handleError}
-      {...props}
+      onClick={onClick}
+      {...rest}
     />
   );
 }
