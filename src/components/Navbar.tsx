@@ -5,11 +5,10 @@ import { Menu, X } from "lucide-react";
 const NAV_LINKS = [
   { id: "hero", label: "Trang chủ" },
   { id: "history", label: "Lịch sử" },
-  { id: "gallery", label: "Hình ảnh" },
-  { id: "halloffame", label: "Kỷ yếu" },
+  { id: "gallery", label: "Kỷ niệm" },
+  { id: "halloffame", label: "Bảng vàng" },
   { id: "alumni", label: "Cựu học sinh" },
   { id: "teachers", label: "Thầy cô" },
-  { id: "memories", label: "Kỷ niệm" },
   { id: "wishes", label: "Lời chúc" },
 ];
 

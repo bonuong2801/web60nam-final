@@ -13,7 +13,6 @@ import { Gallery } from "./components/Gallery";
 import { VideoSection } from "./components/VideoSection";
 import { Alumni } from "./components/Alumni";
 import { TeachersTribute } from "./components/TeachersTribute";
-import { Memories } from "./components/Memories";
 import { Wishes } from "./components/Wishes";
 import { Footer } from "./components/Footer";
 import { HallOfFame } from "./components/HallOfFame";
@@ -54,7 +53,6 @@ export default function App() {
         <ErrorBoundary><HallOfFame /></ErrorBoundary>
         <ErrorBoundary><Alumni /></ErrorBoundary>
         <ErrorBoundary><TeachersTribute /></ErrorBoundary>
-        <ErrorBoundary><Memories /></ErrorBoundary>
         <ErrorBoundary><Wishes /></ErrorBoundary>
         <ErrorBoundary><Footer /></ErrorBoundary>
       </main>
