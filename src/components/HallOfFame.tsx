@@ -11,22 +11,31 @@ interface Honor {
   type: "teacher" | "student";
   img: string;
 }
-
-// THAY ẢNH VÀ THÔNG TIN BẢNG VÀNG CÁC THẾ HỆ:
-// Thuộc tính 'img' là đường dẫn đến ảnh. Hãy đổi thành ảnh cục bộ (Ví dụ: "/images/hoc-sinh-A.jpg")
 const HONORS: Honor[] = [
-  { id: 1, name: "Thầy Lê Văn C", year: "2008", award: "Huân chương Lao động hạng Ba", type: "teacher", img: "/images/halloffame-1.jpg" },
-  { id: 2, name: "Học sinh Trần Văn B", year: "2015", award: "Huy chương Vàng Olympic Toán Quốc tế", type: "student", img: "/images/halloffame-2.jpg" },
-  { id: 3, name: "Cô Phạm Thị D", year: "2012", award: "Giáo viên Dạy giỏi Cấp Quốc gia", type: "teacher", img: "/images/halloffame-3.jpg" },
-  { id: 4, name: "Học sinh Nguyễn Văn E", year: "2018", award: "Trạng nguyên Tiếng Việt Cấp Tỉnh", type: "student", img: "/images/halloffame-4.jpg" },
-  { id: 5, name: "Tập thể Sư phạm", year: "2020", award: "Cờ Thi đua của Chính Phủ", type: "teacher", img: "/images/halloffame-5.jpg" },
-  { id: 6, name: "Học sinh Lê Thị F", year: "2022", award: "Giải Nhất Ngữ Văn Cấp Quốc gia", type: "student", img: "/images/halloffame-6.jpg" },
-  { id: 7, name: "Thầy Hoàng Văn G", year: "2010", award: "Bằng khen của Bộ trưởng Bộ GD&ĐT", type: "teacher", img: "/images/halloffame-7.jpg" },
-  { id: 8, name: "Học sinh Đặng Văn H", year: "2023", award: "Thủ khoa Kỳ thi THPT Quốc gia Cụm thi", type: "student", img: "/images/halloffame-8.jpg" },
-  { id: 9, name: "Trường THPT Cẩm Giàng", year: "2024", award: "Huân chương Lao động hạng Nhì", type: "teacher", img: "/images/halloffame-9.jpg" },
-  { id: 10, name: "Thầy Đỗ Văn I", year: "2019", award: "Bằng khen của Thủ tướng Chính phủ", type: "teacher", img: "/images/halloffame-10.jpg" },
-  { id: 11, name: "Học sinh Trần Thị K", year: "2021", award: "Giải Nhất Sinh học Cấp Quốc gia", type: "student", img: "/images/halloffame-11.jpg" },
-  { id: 12, name: "Tổ Khoa học Tự nhiên", year: "2017", award: "Tập thể Lao động Xuất sắc", type: "teacher", img: "/images/halloffame-12.jpg" },
+{ id: 1, name: "Cô Trần Thị Lam", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Một giải Nhất, hai giải Nhì, một giải Ba, hai giải Khuyến khích", type: "teacher", subject: "Ngữ Văn", img: "/images/halloffame-1.jpg" },
+{ id: 2, name: "Cô Cao Thị Hồng Điệp", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Hai giải Ba", type: "teacher", subject: "Toán", img: "/images/halloffame-2.jpg" },
+{ id: 3, name: "Cô Vương Thị Điệp", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Hai giải Ba, một giải Khuyến khích", type: "teacher", subject: "Vật Lý", img: "/images/halloffame-3.jpg" },
+{ id: 4, name: "Cô Lê Thị Hằng", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Hai giải Ba, bốn giải Khuyến khích", type: "teacher", subject: "Tiếng Anh", img: "/images/halloffame-4.jpg" },
+{ id: 5, name: "Cô Nguyễn Thị Minh Hồng", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Hai giải Nhì, một giải Ba", type: "teacher", subject: "Tin Học", img: "/images/halloffame-5.jpg" },
+{ id: 6, name: "Cô Đỗ Thị Anh Dũng", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Hai giải Ba, ba giải Khuyến khích", type: "teacher", subject: "Hóa Học", img: "/images/halloffame-6.jpg" },
+{ id: 7, name: "Cô Nguyễn Thị Khiêm", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Một giải Ba, hai giải Khuyến khích", type: "teacher", subject: "Sinh Học", img: "/images/halloffame-7.jpg" },
+{ id: 8, name: "Cô Lương Thị Út", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Một giải Nhất, ba giải Nhì", type: "teacher", subject: "Lịch Sử", img: "/images/halloffame-8.jpg" },
+{ id: 9, name: "Cô Vũ Thị Nhuân", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Hai giải Nhì, một giải Ba, ba giải Khuyến khích", type: "teacher", subject: "Địa Lý", img: "/images/halloffame-9.jpg" },
+{ id: 10, name: "Cô Mai Thị Hồng Lựu", year: "2025-2026", award: "Giáo viên bồi dưỡng HSG cấp Thành phố - Hai giải Nhì, một giải Khuyến khích", type: "teacher", subject: "GDKTPL", img: "/images/halloffame-10.jpg" },
+{ id: 11, name: "Vũ Tuấn Khang", year: "2025-2026", award: "Giải Nhất HSG bảng B và Giải Khuyến khích HSG bảng A", type: "student", class: "12N", img: "/images/halloffame-11.jpg" },
+{ id: 12, name: "Nguyễn Văn Quý", year: "2025-2026", award: "Giải Ba HSG bảng A và Giải Ba HSG bảng B", type: "student", class: "12A", img: "/images/halloffame-12.jpg" },
+{ id: 13, name: "Phạm Thùy Linh", year: "2025-2026", award: "Giải Nhất HSG môn Lịch Sử", type: "student", class: "12M", img: "/images/halloffame-13.jpg" },
+{ id: 14, name: "Vũ Thị Ngân Hà", year: "2025-2026", award: "Giải Nhì HSG môn Ngữ Văn", type: "student", class: "12M", img: "/images/halloffame-14.jpg" },
+{ id: 15, name: "Vũ Thị Lan Anh", year: "2025-2026", award: "Giải Nhì HSG môn Ngữ Văn", type: "student", class: "12N", img: "/images/halloffame-15.jpg" },
+{ id: 16, name: "Phạm Huy Dương", year: "2025-2026", award: "Giải Nhì HSG môn Tin Học", type: "student", class: "12A", img: "/images/halloffame-16.jpg" },
+{ id: 17, name: "Nguyễn Minh Quý", year: "2025-2026", award: "Giải Nhì HSG môn Tin Học", type: "student", class: "12A", img: "/images/halloffame-17.jpg" },
+{ id: 18, name: "Trần Xuân Mạnh", year: "2025-2026", award: "Giải Nhì HSG môn Lịch Sử", type: "student", class: "12M", img: "/images/halloffame-18.jpg" },
+{ id: 19, name: "Lê Đình Phúc", year: "2025-2026", award: "Giải Nhì HSG môn Lịch Sử", type: "student", class: "12M", img: "/images/halloffame-19.jpg" },
+{ id: 20, name: "Đào Khánh Hòa", year: "2025-2026", award: "Giải Nhì HSG môn Lịch Sử", type: "student", class: "12K", img: "/images/halloffame-20.jpg" },
+{ id: 21, name: "Vũ Thị Ngọc Mai", year: "2025-2026", award: "Giải Nhì HSG môn GDKTPL", type: "student", class: "12N", img: "/images/halloffame-21.jpg" },
+{ id: 22, name: "Phạm Hà Dung", year: "2025-2026", award: "Giải Nhì HSG môn GDKTPL", type: "student", class: "12M", img: "/images/halloffame-22.jpg" },
+{ id: 23, name: "Vũ Ngọc Hà", year: "2025-2026", award: "Giải Nhì HSG môn Địa Lý", type: "student", class: "12M", img: "/images/halloffame-23.jpg" },
+{ id: 24, name: "Hoàng Thu Trang", year: "2025-2026", award: "Giải Nhì HSG môn Địa Lý", type: "student", class: "12N", img: "/images/halloffame-24.jpg" },
 ];
 
 export function HallOfFame() {
