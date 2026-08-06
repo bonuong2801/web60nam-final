@@ -9,20 +9,20 @@ const CATEGORIES = ["Tất cả", "Quá khứ", "Hiện tại", "Khoảnh khắc
 // Thuộc tính 'url' là đường dẫn ảnh. Thay bằng ảnh cục bộ (Ví dụ: "/images/ky-niem-1.jpg")
 const PHOTOS = [
   { id: 1, category: "Quá khứ", url: "/images/gallery-1.jpg", description: "Độ tuyển \"HÀNH TRÌNH TRI THỨC\" của nhà trường xuất sắc vượt qua vòng loại" },
-  { id: 2, category: "Hiện tại", url: "/images/gallery-2.jpg", description: "Học sinh trao đổi bài trực tuyến trong phòng máy mới." },
+  { id: 2, category: "Hiện tại", url: "/images/gallery-2.jpg", description: "Cuộc thi STEM cấp trường năm học 2025-2026." },
   { id: 3, category: "Khoảnh khắc", url: "/images/gallery-3.jpg", description: "Đêm văn nghệ năm ấy." },
   { id: 4, category: "Quá khứ", url: "/images/gallery-4.jpg", description: "Lễ khai giảng năm học 2017-2018 và đón bằng công nhận trường đạt chuẩn quốc gia." },
-  { id: 5, category: "Hiện tại", url: "/images/gallery-5.jpg", description: "Buổi lễ chào cờ thứ hai trang nghiêm." },
+  { id: 5, category: "Hiện tại", url: "/images/gallery-5.jpg", description: "Thầy cô và học sinh nhà trường đạt giải ba cuộc thi \"Tuổi trẻ chung tay đẩy lùi ma túy\" năm 2025." },
   { id: 6, category: "Khoảnh khắc", url: "/images/gallery-6.jpg", description: "Những anh tình nguyện viên tốt bụng." },
   { id: 7, category: "Quá khứ", url: "/images/gallery-7.jpg", description: "Lễ khai giảng năm học 2017-2018." },
-  { id: 8, category: "Hiện tại", url: "/images/gallery-8.jpg", description: "Hoạt động nhóm sôi nổi trong giờ ngoại khoá." },
+  { id: 8, category: "Hiện tại", url: "/images/gallery-8.jpg", description: "Thầy và trò nhà trường đạt giải tại cuộc thi \"Ngày hội STEM\"\ cấp tỉnh năm học 2024-2025." },
   { id: 9, category: "Khoảnh khắc", url: "/images/gallery-9.jpg", description: "Thầy và trò ngày 20/11/2019." },
   { id: 10, category: "Khoảnh khắc", url: "/images/gallery-10.jpg", description: "Đội thi hành trình tri thức năm 2020." },
   { id: 11, category: "Quá khứ", url: "/images/gallery-11.jpg", description: "Văn nghệ ngày 20/11/2019." },
-  { id: 12, category: "Hiện tại", url: "/images/gallery-12.jpg", description: "Các học sinh đạt giải cao kỳ thi học sinh giỏi." },
-  { id: 13, category: "Khoảnh khắc", url: "/images/gallery-13.jpg", description: "Chuyến thiện nguyện đong đầy tình yêu thương." },
-  { id: 14, category: "Quá khứ", url: "/images/gallery-14.jpg", description: "Đội văn nghệ trường mang giải nhất cấp tỉnh về." },
-  { id: 15, category: "Hiện tại", url: "/images/gallery-15.jpg", description: "Lớp chuyên toán trong tiết mục văn nghệ." },
+  { id: 12, category: "Hiện tại", url: "/images/gallery-12.jpg", description: "HĐTN: Tìm hiểu truyền thống hiếu học, khoa bảng Xứ Đông." },
+  { id: 13, category: "Khoảnh khắc", url: "/images/gallery-13.jpg", description: "Một góc sân trường." },
+  { id: 14, category: "Quá khứ", url: "/images/gallery-14.jpg", description: "Học sinh nahf trường tham gia lao động công ích dọn dẹp nghĩa trang liệt sĩ." },
+  { id: 15, category: "Hiện tại", url: "/images/gallery-15.jpg", description: "Cuộc thi trang phụ tái chế năm học 2025-2026." },
 ];
 
 export function Gallery() {
