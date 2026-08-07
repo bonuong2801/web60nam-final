@@ -7,7 +7,6 @@ const NAV_LINKS = [
   { id: "history", label: "Lịch sử" },
   { id: "gallery", label: "Kỷ niệm" },
   { id: "halloffame", label: "Bảng vàng" },
-  { id: "alumni", label: "Cựu học sinh" },
   { id: "teachers", label: "Thầy cô" },
   { id: "wishes", label: "Lời chúc" },
 ];

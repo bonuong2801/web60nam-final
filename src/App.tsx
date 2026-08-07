@@ -11,7 +11,6 @@ import { AnimatePresence, motion } from "motion/react";
 import { History } from "./components/History";
 import { Gallery } from "./components/Gallery";
 import { VideoSection } from "./components/VideoSection";
-import { Alumni } from "./components/Alumni";
 import { TeachersTribute } from "./components/TeachersTribute";
 import { Wishes } from "./components/Wishes";
 import { Footer } from "./components/Footer";
@@ -51,7 +50,6 @@ export default function App() {
         <ErrorBoundary><Gallery /></ErrorBoundary>
         <ErrorBoundary><VideoSection /></ErrorBoundary>
         <ErrorBoundary><HallOfFame /></ErrorBoundary>
-        <ErrorBoundary><Alumni /></ErrorBoundary>
         <ErrorBoundary><TeachersTribute /></ErrorBoundary>
         <ErrorBoundary><Wishes /></ErrorBoundary>
         <ErrorBoundary><Footer /></ErrorBoundary>
