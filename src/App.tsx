@@ -16,7 +16,6 @@ import { AvatarFrameSection } from "./components/AvatarFrameSection";
 import { Wishes } from "./components/Wishes";
 import { Footer } from "./components/Footer";
 import { HallOfFame } from "./components/HallOfFame";
-import { TimelineModal } from "./components/TimelineModal";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 
 export default function App() {
@@ -44,7 +43,6 @@ export default function App() {
   return (
     <div className="bg-white min-h-screen text-slate-900">
       <ErrorBoundary><Navbar /></ErrorBoundary>
-      <ErrorBoundary><TimelineModal /></ErrorBoundary>
       <main className="min-h-screen bg-white transition-colors">
         <ErrorBoundary><Hero /></ErrorBoundary>
         <ErrorBoundary><History /></ErrorBoundary>

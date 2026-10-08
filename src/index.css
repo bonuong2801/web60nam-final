@@ -49,18 +49,6 @@ body {
   @apply text-[10px] md:text-xs font-semibold uppercase tracking-[0.3em] text-slate-500 mb-4 block;
 }
 
-.demo-book {
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.45) !important;
-  border-radius: 4px;
-}
-.demo-book section {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
-}
-.demo-book [data-density="hard"] {
-  box-shadow: inset 0 0 30px rgba(0,0,0,0.15);
-}
-
 .fancy-underline {
   position: relative;
   display: inline-block;
