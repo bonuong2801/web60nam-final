@@ -47,7 +47,7 @@ const MILESTONES: Milestone[] = [
     cohorts: "Khóa 31 đến Khóa 40",
     individualAchievements: [
       "Đào tạo 7.012 học sinh tốt nghiệp phổ thông đạt tỷ lệ trung bình 95%.",
-      "Có 1.577 học sinh đỗ vào các trường Đại học, Cao đẳng (đạt tỷ lệ bình quân 22,5%)], liên tục đứng thứ hạng cao trong tỉnh (xếp thứ 3 toàn tỉnh năm 2002).",
+      "Có 1.577 học sinh đỗ vào các trường Đại học, Cao đẳng (đạt tỷ lệ bình quân 22,5%), liên tục đứng thứ hạng cao trong tỉnh (xếp thứ 3 toàn tỉnh năm 2002).",
       "Đạt 295 giải trong các kỳ thi học sinh giỏi cấp tỉnh (trong đó có 11 giải Nhất)."
     ],
     collectiveAchievements: [
@@ -68,8 +68,8 @@ const MILESTONES: Milestone[] = [
     overview: "Mốc son kỷ niệm 50 năm ngày thành lập trường ghi nhận sự bứt phá vượt bậc về chất lượng giáo dục đại trà lẫn chất lượng mũi nhọn, bồi dưỡng thành công nhiều Thủ khoa, Á khoa Đại học, xây dựng đội ngũ giáo viên có trình độ trên chuẩn ngày càng cao.",
     cohorts: "Khóa 41 đến Khóa 50",
     individualAchievements: [
-      "Đào tạo 4.470 học sinh tốt nghiệp phổ thông đạt tỷ lệ 98,8%; khoảng 3.058 học sinh đỗ Đại học, Cao đẳng (tỷ lệ bình quân đạt 71,6%)]. Đỉnh cao năm 2016, điểm trung bình thi THPT Quốc gia của trường xuất sắc xếp thứ Nhì toàn tỉnh Hải Dương].",
-      "Ghi nhận các tấm gương học tập xuất sắc: Phùng Thị Ngọc Yến (Thủ khoa khối C ĐH Luật Hà Nội năm 2009), Vũ Hồng Phong (Á khoa khối B ĐH Y Dược Hải Phòng năm 2011)] và Nguyễn Hữu Đức (Á khoa khối A ĐH Dược Hà Nội năm 2014) [19].",
+      "Đào tạo 4.470 học sinh tốt nghiệp phổ thông đạt tỷ lệ 98,8%; khoảng 3.058 học sinh đỗ Đại học, Cao đẳng (tỷ lệ bình quân đạt 71,6%). Đỉnh cao năm 2016, điểm trung bình thi THPT Quốc gia của trường xuất sắc xếp thứ Nhì toàn tỉnh Hải Dương.",
+      "Ghi nhận các tấm gương học tập xuất sắc: Phùng Thị Ngọc Yến (Thủ khoa khối C ĐH Luật Hà Nội năm 2009), Vũ Hồng Phong (Á khoa khối B ĐH Y Dược Hải Phòng năm 2011) và Nguyễn Hữu Đức (Á khoa khối A ĐH Dược Hà Nội năm 2014).",
       "Học sinh đạt 337 giải học sinh giỏi cấp tỉnh (gồm 2 giải Nhất); giáo viên đạt giải cao cuộc thi Dạy học theo chủ đề tích hợp cấp Bộ (01 giải Nhì năm học 2015-2016, 01 giải Khuyến khích năm học 2014-2015) cùng nhiều giải giáo viên dạy giỏi cấp tỉnh."
     ],
     collectiveAchievements: [
@@ -109,7 +109,7 @@ export function History() {
   const [selectedMilestone, setSelectedMilestone] = useState<Milestone | null>(null);
 
   return (
-    <section id="history" className="py-32 bg-[#F7F5F0] dark:bg-slate-950 transition-colors relative overflow-hidden">
+    <section id="history" className="py-32 bg-white transition-colors relative overflow-hidden text-slate-900">
       {/* Background Accent */}
       <div className="absolute top-0 right-0 text-[20rem] font-serif font-black text-slate-200/40 dark:text-slate-800 dark:text-slate-200/40 select-none pointer-events-none -translate-y-1/4 translate-x-1/4">
         60
@@ -159,7 +159,7 @@ export function History() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-              <div className="absolute left-[31px] md:left-1/2 top-10 md:top-1/2 w-4 h-4 bg-red-800 dark:bg-red-600 rounded-full border-2 border-[#F7F5F0] dark:border-slate-950 shadow-xl -translate-x-1/2 md:-translate-y-1/2 z-10 ring-8 ring-red-50/50 dark:ring-red-900/30" />
+              <div className="absolute left-[31px] md:left-1/2 top-10 md:top-1/2 w-4 h-4 bg-red-800 rounded-full border-2 border-white shadow-xl -translate-x-1/2 md:-translate-y-1/2 z-10 ring-8 ring-red-50/70" />
 
               <div
                 className={`w-full md:w-1/2 pl-20 pr-4 md:px-0 flex ${

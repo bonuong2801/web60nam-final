@@ -106,7 +106,7 @@ export function Hero() {
           
           <button
             onClick={() => setIsVideoOpen(true)}
-            className="group flex items-center gap-3 px-8 py-5 rounded-full border border-white/20 text-white backdrop-blur-sm transition-all hover:bg-white dark:bg-slate-900 hover:text-slate-900 dark:text-slate-50 shadow-lg"
+            className="group flex items-center gap-3 px-8 py-5 rounded-full border border-white/20 text-white backdrop-blur-sm transition-all hover:bg-white hover:text-slate-900 shadow-lg cursor-pointer"
           >
             <Play size={20} className="fill-current group-hover:text-amber-500" />
             <span className="font-bold tracking-tight">

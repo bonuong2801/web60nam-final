@@ -44,12 +44,12 @@ export function HallOfFame() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <section id="halloffame" className="py-32 bg-[#0F172A] overflow-hidden relative">
-      {/* Cinematic Background */}
+    <section id="halloffame" className="py-32 bg-white text-slate-900 overflow-hidden relative transition-colors">
+      {/* Background Accent */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[120px] opacity-50" />
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-red-900/10 rounded-full blur-[150px] opacity-30" />
-        <div className="absolute inset-0 opacity-[0.03] bg-[url('/images/carbon-fibre.png')]" />
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[120px] opacity-50" />
+        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-red-900/5 rounded-full blur-[150px] opacity-30" />
+        <div className="absolute inset-0 opacity-[0.03] pattern-paper" />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
@@ -65,7 +65,7 @@ export function HallOfFame() {
                <motion.div 
                  animate={{ scale: [1, 1.5, 1], opacity: [0.3, 0.6, 0.3] }}
                  transition={{ repeat: Infinity, duration: 3 }}
-                 className="absolute inset-0 bg-amber-400 rounded-full blur-xl"
+                 className="absolute inset-0 bg-amber-400/40 rounded-full blur-xl"
                />
              </div>
           </motion.div>
@@ -74,7 +74,7 @@ export function HallOfFame() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="caps-label !text-amber-500/80 mb-4"
+            className="caps-label mb-4"
           >
             Vinh danh truyền thống
           </motion.span>
@@ -84,9 +84,9 @@ export function HallOfFame() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-script text-5xl md:text-7xl lg:text-8xl mb-8 text-white"
+            className="font-script text-5xl md:text-7xl lg:text-8xl mb-8 text-slate-900"
           >
-            Bảng Vàng <span className="italic text-amber-500">Kỷ Nguyên</span>
+            Bảng Vàng <span className="italic text-red-800">Kỷ Nguyên</span>
           </motion.h2>
           
           <motion.p 
@@ -94,7 +94,7 @@ export function HallOfFame() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-slate-400 font-light text-xl max-w-2xl mx-auto leading-relaxed"
+            className="text-slate-600 font-light text-xl max-w-2xl mx-auto leading-relaxed"
           >
             Tôn vinh những cá nhân và tập thể xuất sắc đã làm rạng danh tên tuổi mái trường Cẩm Giàng qua sáu thập kỷ kiến tạo.
           </motion.p>
@@ -111,25 +111,25 @@ export function HallOfFame() {
                whileHover={{ y: -10 }}
                className="group relative"
              >
-               <div className="absolute inset-0 bg-linear-to-b from-amber-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl blur-xl" />
+               <div className="absolute inset-0 bg-linear-to-b from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl blur-xl" />
                
-               <div className="relative bg-slate-800/40 border border-white/5 backdrop-blur-md p-8 rounded-3xl transition-all group-hover:border-amber-500/50 h-full flex flex-col items-center text-center">
-                  <div className="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden mb-6 ring-4 ring-slate-700/50 group-hover:ring-amber-500/30 transition-all shadow-2xl dark:shadow-black/50">
+               <div className="relative bg-white border border-slate-200/90 shadow-lg shadow-slate-200/50 p-8 rounded-3xl transition-all group-hover:shadow-2xl group-hover:border-amber-500/50 h-full flex flex-col items-center text-center">
+                  <div className="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden mb-6 ring-4 ring-slate-100 group-hover:ring-amber-500/30 transition-all shadow-md">
                     <SafeImage loading="lazy" src={item.img} alt={item.name} className="w-full h-full object-cover transition-all duration-700" />
                   </div>
                   
                   <div className="space-y-4 flex-1">
                     <div className="flex flex-col items-center gap-2">
-                      <span className="text-amber-500 font-mono text-sm tracking-widest">{item.year}</span>
-                      <h3 className="text-2xl font-serif text-white group-hover:text-amber-400 transition-colors leading-tight">{item.name}</h3>
+                      <span className="text-amber-600 font-mono text-sm tracking-widest font-semibold">{item.year}</span>
+                      <h3 className="text-2xl font-serif text-slate-900 group-hover:text-amber-700 transition-colors leading-tight">{item.name}</h3>
                     </div>
-                    <div className="w-8 h-px bg-slate-700 mx-auto group-hover:w-16 group-hover:bg-amber-500 transition-all" />
-                    <p className="text-slate-400 font-light text-sm leading-relaxed italic group-hover:text-slate-300 transition-colors">
+                    <div className="w-8 h-px bg-slate-200 mx-auto group-hover:w-16 group-hover:bg-amber-500 transition-all" />
+                    <p className="text-slate-600 font-light text-sm leading-relaxed italic group-hover:text-slate-800 transition-colors">
                       "{item.award}"
                     </p>
                   </div>
                   
-                  <div className="absolute top-6 right-6 text-slate-700 group-hover:text-amber-500/20 transition-colors">
+                  <div className="absolute top-6 right-6 text-slate-200 group-hover:text-amber-500/30 transition-colors">
                     {item.type === 'student' ? <Star size={40} /> : <Medal size={40} />}
                   </div>
                </div>
@@ -145,13 +145,13 @@ export function HallOfFame() {
         >
           <button 
             onClick={() => setShowModal(true)}
-            className="group relative px-10 py-4 bg-transparent text-white rounded-full font-bold overflow-hidden transition-all border border-slate-700 hover:border-amber-500"
+            className="group relative px-10 py-4 bg-slate-900 text-white rounded-full font-bold overflow-hidden transition-all shadow-xl hover:shadow-amber-500/20"
           >
              <span className="relative z-10 flex items-center gap-3">
                Xem toàn bộ danh sách vinh danh
                <ArrowRight size={18} className="group-hover:translate-x-2 transition-transform" />
              </span>
-             <div className="absolute inset-0 bg-amber-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+             <div className="absolute inset-0 bg-amber-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           </button>
         </motion.div>
       </div>
@@ -163,39 +163,39 @@ export function HallOfFame() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setShowModal(false)}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4 overflow-y-auto"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 backdrop-blur-sm p-4 overflow-y-auto"
           >
             <motion.div
               initial={{ scale: 0.9, y: 20 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 20 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-slate-900 rounded-3xl w-full max-w-5xl my-8 p-6 md:p-10 shadow-2xl dark:shadow-black/50 relative border border-slate-800"
+              className="bg-white rounded-3xl w-full max-w-5xl my-8 p-6 md:p-10 shadow-2xl relative border border-slate-200 text-slate-900"
             >
               <button 
                 onClick={() => setShowModal(false)}
-                className="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors"
+                className="absolute top-6 right-6 text-slate-400 hover:text-slate-800 transition-colors"
               >
                 <X size={28} />
               </button>
               
               <div className="text-center mb-10">
-                <div className="inline-flex items-center justify-center p-3 bg-amber-500/20 text-amber-400 rounded-full mb-4 ring-1 ring-amber-500/50">
+                <div className="inline-flex items-center justify-center p-3 bg-amber-500/10 text-amber-600 rounded-full mb-4 ring-1 ring-amber-500/30">
                   <Trophy size={28} />
                 </div>
-                <h3 className="font-script text-3xl md:text-4xl text-white">Bảng Vàng Các Thế Hệ</h3>
+                <h3 className="font-script text-3xl md:text-4xl text-slate-900">Bảng Vàng Các Thế Hệ</h3>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
                 {HONORS.map((item) => (
-                  <div key={item.id} className="bg-slate-800/80 p-5 rounded-2xl border border-slate-700/50 flex gap-4 items-start">
-                    <div className="w-12 h-16 rounded-md overflow-hidden shrink-0 border border-slate-700/50 bg-slate-800">
+                  <div key={item.id} className="bg-slate-50 p-5 rounded-2xl border border-slate-200/80 flex gap-4 items-start shadow-sm">
+                    <div className="w-12 h-16 rounded-md overflow-hidden shrink-0 border border-slate-200 bg-slate-100">
                       <SafeImage loading="lazy" src={item.img} alt={item.name} className="w-full h-full object-cover" />
                     </div>
                     <div>
-                      <h4 className="font-serif text-lg text-white mb-1">{item.name}</h4>
-                      <div className="inline-block px-2 py-0.5 bg-slate-800 border border-slate-700 text-slate-400 text-[10px] rounded mb-2 font-medium">Năm {item.year}</div>
-                      <p className="text-slate-400 font-light text-xs leading-relaxed">{item.award}</p>
+                      <h4 className="font-serif text-lg text-slate-900 mb-1">{item.name}</h4>
+                      <div className="inline-block px-2 py-0.5 bg-white border border-slate-200 text-slate-600 text-[10px] rounded mb-2 font-medium">Năm {item.year}</div>
+                      <p className="text-slate-600 font-light text-xs leading-relaxed">{item.award}</p>
                     </div>
                   </div>
                 ))}

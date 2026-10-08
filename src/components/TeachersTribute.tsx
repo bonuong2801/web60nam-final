@@ -20,17 +20,13 @@ const TEACHERS: Teacher[] = [
   { id: 3, name: "Thầy Phạm Văn Quyết", subject: "Hiệu Trưởng", years: "1997 - 2007", achievements: "Bằng khen của Bộ GD&ĐT, Tổ trưởng chuyên môn xuất sắc.", img: "/images/phamvanquyet.png" },
   { id: 4, name: "Thầy Nguyễn Đức Đấu", subject: "Hiệu Trưởng", years: "2007 - 2015", achievements: "Chiến sĩ thi đua cấp Tỉnh, Giáo viên truyền cảm hứng.", img: "/images/nguyenđucau.png" },
   { id: 5, name: "Thầy Trần Văn Ta", subject: "Hiệu Trưởng", years: "2016 - 2025", achievements: "Kỷ niệm chương vì sự nghiệp giáo dục, Nhiều sáng kiến kinh nghiệm cấp Tỉnh.", img: "/images/tranvanta.png" },
-  { id: 6, name: "Thầy Đinh Ngọc Giao", subject: "Thể Dục", years: "1994 - Nay", achievements: "Dẫn dắt các đội tuyển thể thao trường đại giải cấp quốc gia.", img: "/images/dinhngocgiao.png" },
-  { id: 7, name: "Cô Đặng Mỹ Lệ", subject: "Địa Lý", years: "2005 - Nay", achievements: "Đóng góp xuất sắc trong đổi mới giảng dạy, giáo viên tiêu biểu.", img: "/images/dangmyle.png" },
-  { id: 8, name: "Thầy Đoàn Tuấn Khanh", subject: "Tin Học", years: "2010 - Nay", achievements: "Đưa học sinh tham gia phong trào tin học trẻ quốc gia.", img: "/images/teacherstribute-8.png" },
 ];
 
 export function TeachersTribute() {
   const [selectedTeacher, setSelectedTeacher] = useState<Teacher | null>(null);
 
   return (
-    <section id="teachers" className="py-32 bg-white dark:bg-slate-900 transition-colors overflow-hidden relative">
-      <div className="absolute top-0 left-0 w-full h-24 bg-linear-to-b from-[#F7F5F0] to-transparent" />
+    <section id="teachers" className="py-32 bg-white text-slate-900 transition-colors overflow-hidden relative">
       
       <div className="max-w-5xl mx-auto px-4 text-center relative z-10 mb-24">
         <motion.div

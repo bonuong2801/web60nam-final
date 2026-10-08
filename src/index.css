@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  @apply bg-[#F7F5F0] dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased selection:bg-amber-200 selection:text-amber-900 transition-colors;
+  @apply bg-white text-slate-900 antialiased selection:bg-amber-200 selection:text-amber-900 transition-colors;
 }
 
 .hide-scrollbar {

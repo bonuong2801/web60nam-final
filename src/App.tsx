@@ -12,6 +12,7 @@ import { History } from "./components/History";
 import { Gallery } from "./components/Gallery";
 import { VideoSection } from "./components/VideoSection";
 import { TeachersTribute } from "./components/TeachersTribute";
+import { AvatarFrameSection } from "./components/AvatarFrameSection";
 import { Wishes } from "./components/Wishes";
 import { Footer } from "./components/Footer";
 import { HallOfFame } from "./components/HallOfFame";
@@ -41,16 +42,17 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div className="bg-white min-h-screen text-slate-900">
       <ErrorBoundary><Navbar /></ErrorBoundary>
       <ErrorBoundary><TimelineModal /></ErrorBoundary>
-      <main className="min-h-screen bg-transparent transition-colors">
+      <main className="min-h-screen bg-white transition-colors">
         <ErrorBoundary><Hero /></ErrorBoundary>
         <ErrorBoundary><History /></ErrorBoundary>
         <ErrorBoundary><Gallery /></ErrorBoundary>
         <ErrorBoundary><VideoSection /></ErrorBoundary>
         <ErrorBoundary><HallOfFame /></ErrorBoundary>
         <ErrorBoundary><TeachersTribute /></ErrorBoundary>
+        <ErrorBoundary><AvatarFrameSection /></ErrorBoundary>
         <ErrorBoundary><Wishes /></ErrorBoundary>
         <ErrorBoundary><Footer /></ErrorBoundary>
       </main>
@@ -64,7 +66,7 @@ export default function App() {
             exit={{ opacity: 0, scale: 0.5, y: 20 }}
             onClick={scrollToTop}
             title="Về đầu trang"
-            className="fixed bottom-6 right-6 z-50 p-3 bg-amber-500 text-white rounded-full shadow-lg shadow-amber-500/30 hover:bg-amber-400 hover:scale-110 active:scale-95 transition-all outline-none"
+            className="fixed bottom-6 right-6 z-50 p-3 bg-amber-500 text-white rounded-full shadow-lg shadow-amber-500/30 hover:bg-amber-400 hover:scale-110 active:scale-95 transition-all outline-none cursor-pointer"
           >
             <ChevronUp size={24} />
           </motion.button>

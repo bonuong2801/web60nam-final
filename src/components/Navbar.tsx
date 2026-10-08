@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { id: "gallery", label: "Kỷ niệm" },
   { id: "halloffame", label: "Bảng vàng" },
   { id: "teachers", label: "Thầy cô" },
+  { id: "avatar-frame", label: "Khung avatar" },
   { id: "wishes", label: "Lời chúc" },
 ];
 
@@ -65,63 +66,91 @@ export function Navbar() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
           isScrolled || isMobileMenuOpen
-            ? "bg-white/90 dark:bg-slate-950/90 backdrop-blur-md shadow-sm py-3 border-b border-slate-200/50 dark:border-slate-800/50" 
+            ? "bg-white/95 backdrop-blur-md shadow-sm py-2.5 border-b border-slate-200/80" 
             : "bg-transparent py-5"
         }`}
       >
-        <div className="w-full px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
-            {/* Logo area */}
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between relative min-h-[44px]">
+            {/* Logo area - Hiệu ứng mở rộng và trượt mượt mà từ dưới lên khi cuộn trang */}
             <div 
-              className="flex items-center gap-2 cursor-pointer" 
-              onClick={() => scrollToSection("hero")}
+              className={`flex items-center overflow-hidden transition-all duration-500 ease-out ${
+                isScrolled || isMobileMenuOpen 
+                  ? "max-w-[260px] opacity-100" 
+                  : "max-w-0 opacity-0"
+              }`}
             >
-              <div className="w-8 h-8 flex items-center justify-center overflow-hidden">
-                <img src="/images/logon.png?v=20260802" alt="Logo" className="w-full h-full object-cover p-1" />
+              <div 
+                className={`flex items-center gap-2.5 cursor-pointer shrink-0 transition-all duration-500 ease-out transform ${
+                  isScrolled || isMobileMenuOpen
+                    ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"
+                    : "opacity-0 translate-y-6 scale-90 pointer-events-none"
+                }`} 
+                onClick={() => scrollToSection("hero")}
+              >
+                <div className="w-8 h-8 flex items-center justify-center overflow-hidden shrink-0">
+                  <img src="/images/logon.png?v=20260802" alt="Logo" className="w-full h-full object-cover p-1" />
+                </div>
+                <span className="font-serif font-semibold text-lg tracking-wide text-slate-900 whitespace-nowrap">
+                  THPT Cẩm Giàng
+                </span>
               </div>
-              <span className={`font-serif font-semibold text-lg tracking-wide transition-colors ${
-                isScrolled || isMobileMenuOpen ? "text-slate-900 dark:text-white" : "text-white"
-              }`}>
-                THPT Cẩm Giàng
-              </span>
             </div>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
-              {NAV_LINKS.map((link) => {
-                const isActive = activeSection === link.id;
-                return (
-                  <button
-                    key={link.id}
-                    onClick={() => scrollToSection(link.id)}
-                    className={`relative px-3 py-2 rounded-full text-sm font-medium transition-colors ${
-                      isActive 
-                        ? (isScrolled ? "text-amber-600 dark:text-amber-400" : "text-amber-400")
-                        : (isScrolled ? "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white" : "text-white/80 hover:text-white")
-                    }`}
-                  >
-                    {link.label}
-                    {isActive && (
-                      <motion.div
-                        layoutId="activeNavIndicator"
-                        className="absolute inset-0 bg-amber-500/10 rounded-full -z-10"
-                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                      />
-                    )}
-                  </button>
-                );
-              })}
+            {/* Desktop Navigation - Dàn đều êm ái khi ở đầu trang, tự động thu gọn mượt mà khi cuộn */}
+            <div 
+              className={`hidden md:flex flex-1 items-center transition-all duration-500 ease-out ${
+                isScrolled ? "justify-end" : "justify-center"
+              }`}
+            >
+              <div
+                className={`flex items-center transition-all duration-500 ease-out ${
+                  isScrolled
+                    ? "w-auto justify-end gap-1 lg:gap-1.5 xl:gap-2 px-0 py-0 bg-transparent border-transparent shadow-none"
+                    : "w-[820px] lg:w-[940px] justify-between px-8 py-2 rounded-full bg-slate-950/30 backdrop-blur-md border border-white/20 shadow-xl shadow-black/10"
+                }`}
+              >
+                {NAV_LINKS.map((link) => {
+                  const isActive = activeSection === link.id;
+                  return (
+                    <button
+                      key={link.id}
+                      onClick={() => scrollToSection(link.id)}
+                      className={`relative rounded-full font-medium whitespace-nowrap shrink-0 transition-all duration-300 ease-out cursor-pointer ${
+                        isScrolled
+                          ? "px-2.5 lg:px-3.5 py-1 lg:py-1.5 text-xs lg:text-sm"
+                          : "px-4 lg:px-5 py-2 text-base lg:text-lg tracking-wide hover:scale-105"
+                      } ${
+                        isActive 
+                          ? (isScrolled ? "text-amber-600 font-semibold" : "text-amber-400 font-semibold")
+                          : (isScrolled ? "text-slate-600 hover:text-slate-900" : "text-white/90 hover:text-white")
+                      }`}
+                    >
+                      <span className="whitespace-nowrap inline-block select-none">{link.label}</span>
+                      {isActive && (
+                        <motion.div
+                          layoutId="activeNavIndicator"
+                          className={`absolute inset-0 rounded-full -z-10 ${
+                            isScrolled ? "bg-amber-500/10" : "bg-amber-500/20"
+                          }`}
+                          transition={{ type: "spring", stiffness: 350, damping: 35 }}
+                        />
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden">
+            <div className="md:hidden ml-auto">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className={`p-2 rounded-lg transition-colors ${
-                  isScrolled || isMobileMenuOpen ? "text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800" : "text-white hover:bg-white/10"
+                  isScrolled || isMobileMenuOpen ? "text-slate-900 hover:bg-slate-100" : "text-white hover:bg-white/10"
                 }`}
               >
                 {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
