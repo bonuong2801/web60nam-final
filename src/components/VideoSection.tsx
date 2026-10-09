@@ -5,7 +5,7 @@ import { SafeImage } from "./SafeImage";
 const PODCASTS = [
   { 
     id: 1, 
-    title: "Tập 1: Những ngày đầu gian khó", 
+    title: "Coming Soon", 
     description: "Ký ức về những ngày đầu thành lập trường, lớp học tranh tre và những viên gạch đầu tiên.", 
     videoSrc: "/videos/podcast-1.mp4", 
     poster: "/images/podcast-1.jpg",
@@ -13,7 +13,7 @@ const PODCASTS = [
   },
   { 
     id: 2, 
-    title: "Tập 2: Tiếng trống trường thời hoa lửa", 
+    title: "Coming Soon", 
     description: "Những năm tháng vừa dạy học vừa sẵn sàng chiến đấu, tinh thần kiên cường của thầy và trò.", 
     videoSrc: "/videos/podcast-2.mp4", 
     poster: "/images/podcast-2.jpg",
@@ -21,7 +21,7 @@ const PODCASTS = [
   },
   { 
     id: 3, 
-    title: "Tập 3: Vượt khó vươn lên trong đổi mới", 
+    title: "Coming Soon", 
     description: "Câu chuyện về sự đồng lòng đổi mới phương pháp, vượt qua thử thách để xây dựng ngôi trường.", 
     videoSrc: "/videos/podcast-3.mp4", 
     poster: "/images/podcast-3.jpg",
@@ -29,7 +29,7 @@ const PODCASTS = [
   },
   { 
     id: 4, 
-    title: "Tập 4: Mái trường của những người gieo hạt", 
+    title: "Coming Soon", 
     description: "Tâm tình của các thầy cô giáo tâm huyết – những người lặng thầm chở con đò tri thức qua sông.", 
     videoSrc: "/videos/podcast-4.mp4", 
     poster: "/images/podcast-4.jpg",
@@ -37,7 +37,7 @@ const PODCASTS = [
   },
   { 
     id: 5, 
-    title: "Tập 5: Đỉnh cao trí tuệ & Bảng vàng danh dự", 
+    title: "Coming Soon", 
     description: "Hành trình bồi dưỡng học sinh giỏi, những kỳ thi thử thách và niềm tự hào rạng danh mái trường.", 
     videoSrc: "/videos/podcast-5.mp4", 
     poster: "/images/podcast-5.jpg",
@@ -45,7 +45,7 @@ const PODCASTS = [
   },
   { 
     id: 6, 
-    title: "Tập 6: Ký ức thanh xuân dưới tán phượng vĩ", 
+    title: "Coming Soon", 
     description: "Những kỷ niệm hồn nhiên tuổi học trò, tình bạn trong sáng và những rung động thanh xuân khó phai.", 
     videoSrc: "/videos/podcast-6.mp4", 
     poster: "/images/podcast-6.jpg",
@@ -53,7 +53,7 @@ const PODCASTS = [
   },
   { 
     id: 7, 
-    title: "Tập 7: Khát vọng bay xa từ mái trường Cẩm Giàng", 
+    title: "Coming Soon", 
     description: "Chia sẻ của các cựu học sinh thành đạt trên mọi nẻo đường đất nước và quốc tế, luôn nhớ về cội nguồn.", 
     videoSrc: "/videos/podcast-7.mp4", 
     poster: "/images/podcast-7.jpg",
@@ -61,7 +61,7 @@ const PODCASTS = [
   },
   { 
     id: 8, 
-    title: "Tập 8: Vững bước tương lai – 60 năm kiến tạo", 
+    title: "Coming Soon", 
     description: "Khát vọng chuyển mình trong kỷ nguyên mới, tiếp nối truyền thống 60 năm vững bước trên chặng đường giáo dục.", 
     videoSrc: "/videos/podcast-8.mp4", 
     poster: "/images/podcast-8.jpg",
@@ -143,15 +143,10 @@ export function VideoSection() {
                   </>
                 )}
               </div>
-              <div className="px-1 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="font-serif text-2xl text-slate-900 mb-3 group-hover:text-amber-700 transition-colors">
-                    {podcast.title}
-                  </h3>
-                  <p className="text-slate-600 font-light leading-relaxed">
-                    {podcast.description}
-                  </p>
-                </div>
+              <div className="px-1">
+                <h3 className="font-serif text-xl sm:text-2xl text-slate-900 group-hover:text-amber-700 transition-colors">
+                  {podcast.title}
+                </h3>
               </div>
             </motion.div>
           ))}
